@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Authors>Henk Kin</Authors>
+    <Description>Enum mapping extension for AutoMapper</Description>
+    <Copyright>Henk Kin</Copyright>
+    <PackageProjectUrl>https://github.com/HenkKin/Enums.Extensions.AutoMapper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/HenkKin/Enums.Extensions.AutoMapper.git</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>Enum extensions AutoMapper AssertConfigurationIsValid Enum value mapping</PackageTags>
+    <Version>1.0.0</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageId>Enums.Extensions.AutoMapper</PackageId>
+    <Product>Enums.Extensions.AutoMapper</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+  </ItemGroup>
+
+</Project>
