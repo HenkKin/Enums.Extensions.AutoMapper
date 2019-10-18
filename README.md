@@ -59,7 +59,7 @@ internal class YourProfile : Profile
 {
     public YourProfile()
     {
-		CreateMap<Source, Destination>()
+         CreateMap<Source, Destination>()
             .AsEnumMap(EnumMappingType.Value) // OR EnumMappingType.Name
             .MapFromEnumValue(Source.First, Destination.Default); 
     }
@@ -84,10 +84,10 @@ public class MappingConfigurationsTests
             configuration.AddMaps(typeof(AssemblyInfo).GetTypeInfo().Assembly);
         });
 
-		// default automapper assertions
+        // default automapper assertions
         config.AssertConfigurationIsValid();
 
-		// Assert
+        // Assert
         config.AssertEnumConfigurationIsValid(); // this line asserts all enum value mapping configs
     }
 }
