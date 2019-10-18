@@ -64,7 +64,6 @@ internal class YourProfile : Profile
             .MapFromEnumValue(Source.First, Destination.Default); 
     }
 }
-    ...
 ```
 
 ### Testing
