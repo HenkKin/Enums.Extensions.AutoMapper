@@ -1,8 +1,9 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
+using AutoMapper;
 using Xunit;
 
-namespace AutoMapper.Extensions.Enums.Tests.EnumByValueTests
+namespace Enums.Extensions.AutoMapper.Tests.EnumByValueTests
 {
     [SuppressMessage("ReSharper", "InconsistentNaming")]
     public class EnumByValue_MissingDestinationTests

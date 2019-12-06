@@ -1,7 +1,8 @@
 ﻿using System.Linq;
 using System.Reflection;
+using AutoMapper;
 
-namespace AutoMapper.Extensions.Enums
+namespace Enums.Extensions.AutoMapper
 {
     public static class ConfigurationProviderExtensions
     {

@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Reflection;
+using AutoMapper;
 
-namespace AutoMapper.Extensions.Enums
+namespace Enums.Extensions.AutoMapper
 {
     internal class EnumMappingExpression<TSourceEnum, TDestinationEnum> : IEnumMappingExpression<TSourceEnum, TDestinationEnum>
-            where TSourceEnum : struct, IConvertible
-            where TDestinationEnum : struct, IConvertible
+            where TSourceEnum : struct, Enum
+            where TDestinationEnum : struct, Enum
     {
         private readonly EnumTypeConverter<TSourceEnum, TDestinationEnum> _enumTypeConverter;
         protected IMappingExpression<TSourceEnum, TDestinationEnum>  MappingExpression { get; }

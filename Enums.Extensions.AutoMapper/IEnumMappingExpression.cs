@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace AutoMapper.Extensions.Enums
+namespace Enums.Extensions.AutoMapper
 {
     public interface IEnumMappingExpression<in TSourceEnum, in TDestinationEnum>
-            where TSourceEnum : struct, IConvertible
-            where TDestinationEnum : struct, IConvertible
+            where TSourceEnum : Enum
+            where TDestinationEnum : Enum
     {
         IEnumMappingExpression<TSourceEnum, TDestinationEnum> MapFromEnumValue(TSourceEnum source, TDestinationEnum destination);
     }

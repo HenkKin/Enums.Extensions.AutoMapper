@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Reflection;
+using AutoMapper;
 
-namespace AutoMapper.Extensions.Enums
+namespace Enums.Extensions.AutoMapper
 {
     public static class MappingExpressionExtensions
     {
         public static IEnumMappingExpression<TSourceEnum, TDestinationEnum> AsEnumMap<TSourceEnum,
             TDestinationEnum>(this IMappingExpression<TSourceEnum, TDestinationEnum> mappingExpression, EnumMappingType enumMappingType = EnumMappingType.Value)
-            where TSourceEnum : struct, IConvertible
-            where TDestinationEnum : struct, IConvertible
+            where TSourceEnum : struct, Enum
+            where TDestinationEnum : struct, Enum
         {
             if (!typeof(TSourceEnum).GetTypeInfo().IsEnum)
             {

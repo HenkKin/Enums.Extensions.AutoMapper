@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Text;
+using AutoMapper;
 
-namespace AutoMapper.Extensions.Enums
+namespace Enums.Extensions.AutoMapper
 {
     internal class EnumTypeConverter<TSourceEnum, TDestinationEnum> : ITypeConverter<TSourceEnum, TDestinationEnum>
-        where TSourceEnum : struct, IConvertible
-        where TDestinationEnum : struct, IConvertible
+        where TSourceEnum : struct, Enum
+        where TDestinationEnum : struct, Enum
     {
         private readonly EnumMappingType _enumMappingType;
         private readonly ConcurrentDictionary<TSourceEnum, TDestinationEnum> _enumValueMappings = new ConcurrentDictionary<TSourceEnum, TDestinationEnum>();

@@ -1,4 +1,6 @@
-﻿namespace AutoMapper.Extensions.Enums
+﻿using AutoMapper;
+
+namespace Enums.Extensions.AutoMapper
 {
     internal class TestResolutionContext : ResolutionContext
     {

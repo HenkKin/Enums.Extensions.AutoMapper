@@ -1,4 +1,4 @@
-﻿namespace AutoMapper.Extensions.Enums
+﻿namespace Enums.Extensions.AutoMapper
 {
     public enum EnumMappingType
     {

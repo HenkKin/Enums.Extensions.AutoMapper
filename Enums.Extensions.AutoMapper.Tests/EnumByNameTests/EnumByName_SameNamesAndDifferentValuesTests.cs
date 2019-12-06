@@ -1,6 +1,7 @@
+using AutoMapper;
 using Xunit;
 
-namespace AutoMapper.Extensions.Enums.Tests.EnumByNameTests
+namespace Enums.Extensions.AutoMapper.Tests.EnumByNameTests
 {
     public class EnumByName_SameNamesAndDifferentValuesTests
     {
